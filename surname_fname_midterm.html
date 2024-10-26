@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roberto T. Vender's Personal Website</title>
+  <style>
+    /* Basic styles for the body */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e9ecef; /* Light background color */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Button styling */
+    .jump-button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      background-color: black; /* Button color */
+      color: white;
+      border-radius: 5px;
+      transition: transform 0.2s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Jump animation on click */
+    .jump-button:active {
+      transform: translateY(-5px);
+    }
+
+    /* Section styling */
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white; /* Section background color */
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: black; /* Header color */
+    }
+
+    /* Photography gallery styling */
+    .photo-gallery {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .photo-gallery img {
+      width: 300px; /* Image width */
+      height: auto; /* Maintain aspect ratio */
+      margin: 10px;
+      border-radius: 8px; /* Rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Education and Skills list styling */
+    .education, .skills {
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    /* Justified text styling */
+    .justified {
+      text-align: justify;
+    }
+
+    /* Contact section styling */
+    .contact-info {
+      text-align: center;
+      margin: 20px;
+    }
+
+    a {
+      color: #007bff; /* Link color */
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline; /* Underline on hover */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Buttons -->
+  <div style="text-align: center; margin: 20px;">
+    <button class="jump-button" onclick="jumpToSection('introduction')">Introduction</button>
+    <button class="jump-button" onclick="jumpToSection('about')">About Me</button>
+    <button class="jump-button" onclick="jumpToSection('education')">Education</button>
+    <button class="jump-button" onclick="jumpToSection('skills')">Skills</button>
+    <button class="jump-button" onclick="jumpToSection('contact')">Contact</button>
+  </div>
+
+  <script>
+    // Function to scroll to sections
+    function jumpToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+  <!-- Sections for scrolling -->
+  <div id="intro" style="margin-top: 50px;"> <!-- Reduced margin here -->
+    <section>
+      <h1>INTRO</h1>
+      <p id="p-head"><b>PERSONAL WEBSITE</b></p>
+      <img src="pp.jpg" alt="Profile Picture" class="profile-img" width="300px" height="300px">
+      <h1>Roberto T. Vender</h1>
+      <p>
+        My name is Roberto T. Vender. I am currently studying Information Technology. I have always been interested in computers and how they work. <br>
+        From a young age, I loved playing with cellphone and learning how to code or understand it and for me to grow and know about software. <br>
+        I believe in working hard and staying curious. I value teamwork because I think great ideas come from working with others. 
+        I enjoy solving problems and finding new ways to make things easier for people.<br>
+        In my free time, I like to play basketball. It keeps me active and helps me learn about working together with others on a team. <br>
+        I also enjoy playing online games, where I can have fun with my friends.
+      </p>
+    </section>
+  </div>
+
+  <div id="about" style="margin-top: 50px;"> <!-- Reduced margin here -->
+    <section>
+      <h1>About Me!</h1>
+      <p>
+        Something unique about me is that I love to mix learning with fun. <br>
+        I believe that every experience, whether in sports, gaming, or studying, teaches me something valuable. <br>
+        My goal is to use my knowledge in technology to create solutions that can help people in their daily lives. <br>
+        I am grateful for my family, who have always supported my dreams. They inspire me to work hard and be the best version of myself. <br>
+        I hope to keep learning and growing, both personally and professionally, as I move forward in my journey.
+      </p>
+    </section>
+  </div>
+
+  <!-- Photography Collection Section -->
+  <section>
+    <h2>Photography Collection</h2>
+    <div class="photo-gallery">
+      <img src="a.jpg" alt="Photo 1">
+      <img src="aa.jpg" alt="Photo 2">
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <div id="education">
+    <section>
+      <h1>Education</h1>
+      <div class="education justified">
+        <strong>Pusok Elementary School</strong><br>
+        Achievement: Perfect Attendance Grade 1 to Grade 6 Achiever<br><br>
+        
+        <strong>Pusok National High School</strong><br>
+        Achievement: Perfect Attendance Grade 7 to Grade 10 Achiever<br><br>
+        
+        <strong>Babag National High School</strong><br>
+        Achievement: Perfect Attendance Grade 11 and 12 with Honor<br>
+      </div>
+    </section>
+  </div>
+
+  <!-- Skills Section -->
+  <div id="skills" style="margin-top: 50px;"> <!-- Reduced margin here -->
+    <section>
+      <h1>Skills</h1>
+      <div class="skills justified">
+        <strong>Technical Skills:</strong><br>
+        - Knowledge of coding in Python and JavaScript<br>
+        - Basic knowledge of web development (HTML, CSS)<br>
+        - Basic knowledge of databases (SQL)<br><br>
+        
+        <strong>Soft Skills:</strong><br>
+        - Strong communication skills<br>
+        - Teamwork and collaboration<br>
+        - Problem-solving<br>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" style="margin-top: 50px;"> <!-- Reduced margin here -->
+    <section>
+      <h1>Contact Section</h1>
+      <div class="contact-info">
+        <p>Email Address: <strong>Robertovender.27@gmail.com</strong><br>
+        Mobile Number: <strong>09702243140</strong><br>
+        Location: <strong>Peublo de Oro Babag 2, Lapu Lapu City</strong><br>
+        <a href="https://www.facebook.com/roberto.vender.180" target="_blank">Facebook</a></p>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
